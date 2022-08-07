@@ -28,8 +28,6 @@
                 @foreach ($item->tags as $tags)
                 <span class="px-2 py-1 bg-violet-100 text-violet-600 rounded-md ms-1">#{{ $tags->name }}</span>
                 @endforeach
-                <span class="px-2 py-1 bg-violet-100 text-violet-600 rounded-md ms-1">#html</span>
-                <span class="px-2 py-1 bg-violet-100 text-violet-600 rounded-md ms-1">#php</span>
               </div>
             </div>
           </div>

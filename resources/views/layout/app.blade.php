@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://nafiswatsiq.github.io/assets/img/logo%20ch.jpg">
     <link rel="icon" type="image/png" sizes="16x16" href="https://nafiswatsiq.github.io/assets/img/logo%20ch.jpg">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body class="bg-gradient-to-r from-violet-500 to-fuchsia-500">

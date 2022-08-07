@@ -13,7 +13,7 @@ class Post extends Model implements HasMedia
 {
     use HasFactory, InteractsWithMedia;
 
-    protected $fillable = ['category_id', 'title', 'slug', 'content', 'is_published'];
+    protected $fillable = ['user_id', 'category_id', 'title', 'slug', 'content', 'is_published'];
 
     protected $casts = [
         'is_published' => 'boolean',
@@ -27,5 +27,10 @@ class Post extends Model implements HasMedia
     public function Tags()
     {
         return $this->belongsToMany(Tag::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }

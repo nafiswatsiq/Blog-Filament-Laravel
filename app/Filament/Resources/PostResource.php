@@ -41,6 +41,8 @@ class PostResource extends Resource
         return $form
             ->schema([
                 Card::make()->schema([
+                    Select::make('user_id')
+                        ->relationship('user', 'name'),
                     Select::make('category_id')
                         ->relationship('category', 'name'),
                     TextInput::make('title')->reactive()
