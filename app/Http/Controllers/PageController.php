@@ -31,7 +31,7 @@ class PageController extends Controller
     {
         $post = Post::where('slug', $slug)->first();
         $recentPost = Post::where('is_published', true)->take(5)->latest()->with('media')->get();
-        
+        // dd($post->user->name);
         SEOTools::setTitle($post->title);
         SEOTools::setDescription('This is my page description');
         SEOTools::opengraph()->setUrl( config('app.url') );

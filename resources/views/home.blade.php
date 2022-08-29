@@ -26,7 +26,7 @@
               <span class="font-medium">Tags:</span>
               <div>
                 @foreach ($item->tags as $tags)
-                <span class="px-2 py-1 bg-violet-100 text-violet-600 rounded-md ms-1">#{{ $tags->name }}</span>
+                <span class="px-2 py-1 bg-violet-100 text-violet-600 rounded-md ms-1 border-l-4 border-violet-400">#{{ $tags->name }}</span>
                 @endforeach
               </div>
             </div>
